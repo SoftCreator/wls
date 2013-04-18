@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<KeyCodes>
+  <KeyboardLayout id="1033">
+    
+    <Key Code="65" Value="a" />
+    <Key Code="66" Value="b" />
+    <Key Code="67" Value="c" />
+    <Key Code="68" Value="d" />
+    <Key Code="69" Value="e" />
+    <Key Code="70" Value="f" />
+    <Key Code="71" Value="g" />
+    <Key Code="72" Value="h" />
+    <Key Code="73" Value="i" />
+    <Key Code="74" Value="j" />
+    <Key Code="75" Value="k" />
+    <Key Code="76" Value="l" />
+    <Key Code="77" Value="m" />
+    <Key Code="78" Value="n" />
+    <Key Code="79" Value="o" />
+    <Key Code="80" Value="p" />
+    <Key Code="81" Value="q" />
+    <Key Code="82" Value="r" />
+    <Key Code="83" Value="s" />
+    <Key Code="84" Value="t" />
+    <Key Code="85" Value="u" />
+    <Key Code="86" Value="v" />
+    <Key Code="87" Value="w" />
+    <Key Code="88" Value="x" />
+    <Key Code="89" Value="y" />
+    <Key Code="90" Value="z" />
+    
+    
+  </KeyboardLayout>
+
+  <KeyboardLayout id="1049">
+    <Key Code="65" Value="ф" />
+    <Key Code="66" Value="и" />
+    <Key Code="67" Value="с" />
+    <Key Code="68" Value="в" />
+    <Key Code="69" Value="у" />
+    <Key Code="70" Value="а" />
+    <Key Code="71" Value="п" />
+    <Key Code="72" Value="р" />
+    <Key Code="73" Value="ш" />
+    <Key Code="74" Value="о" />
+    <Key Code="75" Value="л" />
+    <Key Code="76" Value="д" />
+    <Key Code="77" Value="ь" />
+    <Key Code="78" Value="т" />
+    <Key Code="79" Value="щ" />
+    <Key Code="80" Value="з" />
+    <Key Code="81" Value="й" />
+    <Key Code="82" Value="к" />
+    <Key Code="83" Value="ы" />
+    <Key Code="84" Value="е" />
+    <Key Code="85" Value="г" />
+    <Key Code="86" Value="м" />
+    <Key Code="87" Value="ц" />
+    <Key Code="88" Value="ч" />
+    <Key Code="89" Value="н" />
+    <Key Code="90" Value="я" />
+
+    <Key Code="186" Value="ж" />
+    <Key Code="188" Value="б" />
+    <Key Code="190" Value="ю" />
+
+    <Key Code="192" Value="ё" />
+    
+    <Key Code="219" Value="х" />
+    
+    <Key Code="221" Value="ъ" />
+    <Key Code="222" Value="э" />
+    
+  </KeyboardLayout>
+</KeyCodes>
