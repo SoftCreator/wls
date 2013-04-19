@@ -8,27 +8,9 @@ namespace wls
 {
     public class KeyDecoder
     {
-        [DllImport("user32.dll", SetLastError = true)]
-        static extern int GetWindowThreadProcessId(
-            [In] IntPtr hWnd,
-            [Out, Optional] IntPtr lpdwProcessId
-            );
 
-        [DllImport("user32.dll", SetLastError = true)]
-        static extern IntPtr GetForegroundWindow();
 
-        [DllImport("user32.dll", SetLastError = true)]
-        static extern ushort GetKeyboardLayout(
-            [In] int idThread
-            );
 
-        /// <summary>
-        /// Вернёт Id раскладки.
-        /// </summary>
-        public static ushort GetKeyboardLayout()
-        {
-            return GetKeyboardLayout(GetWindowThreadProcessId(GetForegroundWindow(), IntPtr.Zero));
-        }
 
         private Dictionary<int, string> _baseKeysCode =
             new Dictionary<int, string>

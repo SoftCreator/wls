@@ -30,7 +30,7 @@ namespace wls
                                              r => r.Name == "KeyboardLayout" && r.FirstAttribute.Name == "id" &&
                                                   r.FirstAttribute.Value == layout.ToString(CultureInfo.InvariantCulture));
 
-            string key = "";
+            string key = string.Format("");
             if (codesCollection == null)
             {
                 if (layout != DefaultLayout) return GetKey(keyCode, DefaultLayout);
