@@ -2,10 +2,9 @@
 {
     public class LogKey : ILogItem
     {
-        public LogKey(int code, int codePage, bool upper)
+        public LogKey(int code, int codePage, bool shift)
         {
-            Value = KeyCodes.Instance.GetKey(code, codePage);
-            if (upper) Value = Value.ToUpperInvariant();
+            Value = KeyCodes.Instance.GetKey(code, codePage, shift);
         }
 
         public LogItemType ItemType { get { return LogItemType.Key; } }

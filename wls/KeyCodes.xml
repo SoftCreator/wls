@@ -1,7 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <KeyCodes>
-  <KeyboardLayout id="1033">
+  <Ignore>
+    <Code>16</Code> <!--Shift-->
+    <Code>160</Code> <!--LShift-->
+    <Code>161</Code> <!--RShift-->
+    <Code>162</Code> <!--LCtrl-->
+    <Code>163</Code> <!--RCtrl-->
     
+    <Code>17</Code> <!--Ctrl-->
+    <Code>18</Code> <!--Alt-->
+  </Ignore>
+  <BaseKeys>
+    <Key Code="1" Value="&lt;LBtn&gt;" />
+    <Key Code="2" Value="&lt;RBtn&gt;" />
+    <Key Code="8" Value="&lt;Back&gt;" />
+    <Key Code="9" Value="&lt;Tab&gt;" />
+    <Key Code="27" Value="&lt;Esc&gt;" />
+    <Key Code="32" Value=" " />
+    <Key Code="33" Value="&lt;Pg Up&gt;" />
+    <Key Code="34" Value="&lt;Pg Dn&gt;" />
+    <Key Code="35" Value="&lt;End&gt;" />
+    <Key Code="36" Value="&lt;Home&gt;" />
+    
+    <Key Code="45" Value="&lt;Ins&gt;" />
+    <Key Code="46" Value="&lt;Del&gt;" />
+
+    <Key Code="91" Value="&lt;Win&gt;" />
+
+    <Key Code="112" Value="&lt;F1&gt;" />
+    <Key Code="113" Value="&lt;F2&gt;" />
+    <Key Code="114" Value="&lt;F3&gt;" />
+    <Key Code="115" Value="&lt;F4&gt;" />
+    <Key Code="116" Value="&lt;F5&gt;" />
+    <Key Code="117" Value="&lt;F6&gt;" />
+    <Key Code="118" Value="&lt;F7&gt;" />
+    <Key Code="119" Value="&lt;F8&gt;" />
+    <Key Code="120" Value="&lt;F9&gt;" />
+    <Key Code="121" Value="&lt;F10&gt;" />
+    <Key Code="122" Value="&lt;F11&gt;" />
+    <Key Code="123" Value="&lt;F12&gt;" />
+    
+  </BaseKeys>
+  
+  <KeyboardLayout id="1033"> <!--English layout-->
+
+    <Key Code="48" Value ="0" ShiftValue=")" />
+    <Key Code="49" Value="1" ShiftValue="!" />
+    <Key Code="50" Value ="2" ShiftValue="@" />
+    <Key Code="51" Value ="3" ShiftValue="#" />
+    <Key Code="52" Value ="4" ShiftValue="$" />
+    <Key Code="53" Value ="5" ShiftValue="%" />
+    <Key Code="54" Value ="6" ShiftValue="^" />
+    <Key Code="55" Value ="7" ShiftValue="&amp;" />
+    <Key Code="56" Value ="8" ShiftValue="*" />
+    <Key Code="57" Value ="9" ShiftValue="(" />
+
     <Key Code="65" Value="a" />
     <Key Code="66" Value="b" />
     <Key Code="67" Value="c" />
@@ -28,11 +81,34 @@
     <Key Code="88" Value="x" />
     <Key Code="89" Value="y" />
     <Key Code="90" Value="z" />
+
+    <Key Code="186" Value=";" ShiftValue=":" />
+    <Key Code="187" Value="=" ShiftValue="+" />
+    <Key Code="188" Value="," ShiftValue="&lt;" />
+    <Key Code="189" Value="-" ShiftValue="_" />
+    <Key Code="190" Value="." ShiftValue="&gt;" />
+    <Key Code="191" Value="/" ShiftValue="?" />
+    <Key Code="192" Value="`" ShiftValue="~" />
     
-    
+    <Key Code="219" Value="[" ShiftValue="{" />
+    <Key Code="220" Value="\" ShiftValue="|" />
+    <Key Code="221" Value="]" ShiftValue="}" />    
+    <Key Code="222" Value="'" ShiftValue="&quot;" />
   </KeyboardLayout>
 
-  <KeyboardLayout id="1049">
+  <KeyboardLayout id="1049"> <!--Russian layout-->
+
+    <Key Code="48" Value ="0" ShiftValue=")" />
+    <Key Code="49" Value="1" ShiftValue="!" />
+    <Key Code="50" Value ="2" ShiftValue="&quot;" />
+    <Key Code="51" Value ="3" ShiftValue="№" />
+    <Key Code="52" Value ="4" ShiftValue=";" />
+    <Key Code="53" Value ="5" ShiftValue="%" />
+    <Key Code="54" Value ="6" ShiftValue=":" />
+    <Key Code="55" Value ="7" ShiftValue="?" />
+    <Key Code="56" Value ="8" ShiftValue="*" />
+    <Key Code="57" Value ="9" ShiftValue="(" />
+    
     <Key Code="65" Value="ф" />
     <Key Code="66" Value="и" />
     <Key Code="67" Value="с" />
