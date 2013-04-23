@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <KeyCodes>
-  <Ignore>
+  <Ignore>    
     <Code>16</Code> <!--Shift-->
+    <Code>17</Code> <!--Ctrl-->
+    <Code>18</Code> <!--Alt-->
+    
     <Code>160</Code> <!--LShift-->
     <Code>161</Code> <!--RShift-->
     <Code>162</Code> <!--LCtrl-->
     <Code>163</Code> <!--RCtrl-->
-    
-    <Code>17</Code> <!--Ctrl-->
-    <Code>18</Code> <!--Alt-->
+   
   </Ignore>
   <BaseKeys>
     <Key Code="1" Value="&lt;LBtn&gt;" />
     <Key Code="2" Value="&lt;RBtn&gt;" />
     <Key Code="8" Value="&lt;Back&gt;" />
     <Key Code="9" Value="&lt;Tab&gt;" />
+    <Key Code="13" Value="&#13;&#10;" />
     <Key Code="27" Value="&lt;Esc&gt;" />
     <Key Code="32" Value=" " />
     <Key Code="33" Value="&lt;Pg Up&gt;" />
@@ -26,6 +28,20 @@
     <Key Code="46" Value="&lt;Del&gt;" />
 
     <Key Code="91" Value="&lt;Win&gt;" />
+    
+    <!--Numpad keys-->
+    <Key Code="96" Value="0" />
+    <Key Code="97" Value="1" />
+    <Key Code="98" Value="2" />
+    <Key Code="99" Value="3" />
+    <Key Code="100" Value="4" />
+    <Key Code="101" Value="5" />
+    <Key Code="102" Value="6" />
+    <Key Code="103" Value="7" />
+    <Key Code="104" Value="8" />
+    <Key Code="105" Value="9" />
+    <!-- *** -->
+
 
     <Key Code="112" Value="&lt;F1&gt;" />
     <Key Code="113" Value="&lt;F2&gt;" />
@@ -39,6 +55,8 @@
     <Key Code="121" Value="&lt;F10&gt;" />
     <Key Code="122" Value="&lt;F11&gt;" />
     <Key Code="123" Value="&lt;F12&gt;" />
+    
+    <Key Code="189" Value="-" ShiftValue="_" />
     
   </BaseKeys>
   
@@ -85,7 +103,7 @@
     <Key Code="186" Value=";" ShiftValue=":" />
     <Key Code="187" Value="=" ShiftValue="+" />
     <Key Code="188" Value="," ShiftValue="&lt;" />
-    <Key Code="189" Value="-" ShiftValue="_" />
+    
     <Key Code="190" Value="." ShiftValue="&gt;" />
     <Key Code="191" Value="/" ShiftValue="?" />
     <Key Code="192" Value="`" ShiftValue="~" />
@@ -139,7 +157,7 @@
     <Key Code="186" Value="ж" />
     <Key Code="188" Value="б" />
     <Key Code="190" Value="ю" />
-
+    <Key Code="191" Value="." ShiftValue="," />
     <Key Code="192" Value="ё" />
     
     <Key Code="219" Value="х" />

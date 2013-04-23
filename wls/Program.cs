@@ -7,7 +7,7 @@ namespace wls
     {
         static void Main()
         {
-            var km = new KeysMonitor(new ConsoleFlash(), new PlainBufferProcessor())
+            var km = new KeysMonitor(new FileFlash(Config.LogFileName, Config.LogFileDatePattern), new SmartBufferProcessor())
                 {
                     FlashInterval = Config.FlashInterval
                 };
