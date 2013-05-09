@@ -23,6 +23,10 @@
     <Key Code="34" Value="&lt;Pg Dn&gt;" />
     <Key Code="35" Value="&lt;End&gt;" />
     <Key Code="36" Value="&lt;Home&gt;" />
+    <Key Code="37" Value="&lt;←&gt;" />
+    <Key Code="38" Value="&lt;↑&gt;" />
+    <Key Code="39" Value="&lt;→&gt;" />
+    <Key Code="40" Value="&lt;↓&gt;" />
     
     <Key Code="45" Value="&lt;Ins&gt;" />
     <Key Code="46" Value="&lt;Del&gt;" />
