@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 using wls.LogItems;
 
 namespace wls.Buffer
@@ -25,6 +22,11 @@ namespace wls.Buffer
 
                         result.Append(string.Format("\r\n[{0}]\r\n", logItem.Value));
                         break;
+
+                    case LogItemType.TimeStamp:
+                        result.Append(string.Format("\r\n#{0}#\r\n", logItem.Value));
+                        break;
+
                     default:
                         if (logItem.Value.Contains(">"))
                         {

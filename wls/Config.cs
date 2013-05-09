@@ -11,7 +11,11 @@ namespace wls
     {
         public static string LogFileDatePattern
         {
-            get { return "yyyy_MM_dd_HH"; }
+            get { return ConfigurationManager.AppSettings["LogFileDatePattern"]; }
+        }        
+        public static string TimeStamp
+        {
+            get { return ConfigurationManager.AppSettings["TimeStamp"]; }
         }
 
         public static string LogFileName

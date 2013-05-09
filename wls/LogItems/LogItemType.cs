@@ -10,6 +10,7 @@ namespace wls.LogItems
     {
         Key,
         ToggleKey,
-        AppTitle
+        AppTitle,
+        TimeStamp
     }
 }

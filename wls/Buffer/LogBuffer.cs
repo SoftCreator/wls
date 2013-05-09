@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using wls.LogItems;
 
@@ -12,6 +13,8 @@ namespace wls.Buffer
         private bool _altPrev;
         private bool _capsPrev;
 
+        private string _prevTimeStamp;
+
         private readonly int[] _ignoreKeys;
 
         private readonly IBufferProcessor _bufferProcessor;
@@ -24,6 +27,13 @@ namespace wls.Buffer
         public void Add(IList<int> keys)
         {
             string activeAppTitle = KbApiWrapper.GetAppTitle();
+            string timeStamp = DateTime.Now.ToString(Config.TimeStamp);
+            // log time stamp if changed
+            if (timeStamp != _prevTimeStamp)
+            {
+                _logItems.Add(new LogTimeStamp(timeStamp));
+                _prevTimeStamp = timeStamp;
+            }
             // check app title
             if (_appTitlePrev != activeAppTitle)
             {
